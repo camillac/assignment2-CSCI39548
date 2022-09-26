@@ -1,4 +1,4 @@
-# CSCI 39548: Assignment 1 - Zoo
+# CSCI 39548: Assignment 2 - JavaScript Methods
 
 Group member:
 
