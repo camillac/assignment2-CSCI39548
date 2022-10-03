@@ -25,6 +25,14 @@ Array.prototype.myMap = function(callbackFn) {
 // FILTER //
 Array.prototype.myFilter = function(callbackFn) {
   // Place your code here.
+  let arr = [];
+  for (let i = 0; i < this.length; i++){
+    if (this[i] !== undefined && callbackFn(this[i], i, this)){
+      arr.push(this[i]);
+    }
+  }
+
+  return arr;
 };
 
 // SOME //
