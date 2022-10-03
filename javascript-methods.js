@@ -76,6 +76,13 @@ Array.prototype.myReduce = function(callbackFn) {
 // INCLUDES //
 Array.prototype.myIncludes = function(searchElement) {
   // Place your code here.
+  for (let i = 0; i < this.length; i++){
+    if (this[i] !== undefined && this[i] === searchElement || (Number.isNaN(NaN) && Number.isNaN(NaN))){
+      return true;
+    }
+  }
+
+  return false;
 };
 
 // INDEXOF //
