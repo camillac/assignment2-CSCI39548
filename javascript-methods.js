@@ -77,7 +77,7 @@ Array.prototype.myReduce = function(callbackFn) {
 Array.prototype.myIncludes = function(searchElement) {
   // Place your code here.
   for (let i = 0; i < this.length; i++){
-    if (this[i] !== undefined && this[i] === searchElement || (Number.isNaN(NaN) && Number.isNaN(NaN))){
+    if (this[i] !== undefined && this[i] === searchElement || (Number.isNaN(searchElement) && Number.isNaN(this[i]))){
       return true;
     }
   }
